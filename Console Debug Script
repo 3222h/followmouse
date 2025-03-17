@@ -1,0 +1,16 @@
+// Log mouse events to console to check if the script is working
+document.addEventListener("mousemove", (e) => {
+    console.log(`Mouse moved: X=${e.clientX}, Y=${e.clientY}`);
+});
+
+document.addEventListener("mouseenter", (e) => {
+    console.log(`Mouse entered: ${e.target.tagName}`);
+});
+
+document.addEventListener("mouseleave", (e) => {
+    console.log(`Mouse left: ${e.target.tagName}`);
+});
+
+document.addEventListener("mouseover", (e) => {
+    console.log(`Mouse over: ${e.target.tagName}`);
+});
